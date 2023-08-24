@@ -18,12 +18,12 @@ def measurement():
     try:
         while True:
             SONIC_LEFT.getDistance()
-            SONIC_RIGHT.getDistance()
-            SONIC_BACK.getDistance()
-            SONIC_FRONT.getDistance()
-            print("Distanz Hinten:", SONIC_BACK.distance)
-            print("Distanz Vorne:", SONIC_FRONT.distance)
-            print("Distanz Rechts:", SONIC_RIGHT.distance)
+            #SONIC_RIGHT.getDistance()
+            #SONIC_BACK.getDistance()
+            #SONIC_FRONT.getDistance()
+            #print("Distanz Hinten:", SONIC_BACK.distance)
+            #print("Distanz Vorne:", SONIC_FRONT.distance)
+            #print("Distanz Rechts:", SONIC_RIGHT.distance)
             print("Distanz Links:", SONIC_LEFT.distance)
 
             time.sleep(1)
@@ -35,6 +35,6 @@ def measurement():
 
 
 SONIC_LEFT = ultraSonic(GPIO_ECHO_SENSOR_LEFT)
-SONIC_BACK = ultraSonic(GPIO_ECHO_SENSOR_BACK)
-SONIC_FRONT = ultraSonic(GPIO_ECHO_SENSOR_FRONT)
-SONIC_RIGHT = ultraSonic(GPIO_ECHO_SENSOR_RIGHT)
+#SONIC_BACK = ultraSonic(GPIO_ECHO_SENSOR_BACK)
+#SONIC_FRONT = ultraSonic(GPIO_ECHO_SENSOR_FRONT)
+#SONIC_RIGHT = ultraSonic(GPIO_ECHO_SENSOR_RIGHT)
